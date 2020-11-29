@@ -10,10 +10,7 @@ RUN set -x \
   && apt-get clean && rm -rf /tmp/*
 
 COPY Docker/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
-#ADD Docker/default /etc/nginx/sites-enabled/
-ADD bin  /opt/jackwui/
-ADD usr/ /opt/jackwui/
-ADD lib/ /opt/jackwui/
+ADD . /opt/jackwui
 
 RUN echo "Setup Configs..." \
   && (cd /opt/jackwui && npm install) \
