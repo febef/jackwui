@@ -6,12 +6,10 @@ services:
     container_name: jackwui
     privileged: true
     expose:
-      - "3000"
-    ports:
-      - "3014:3000"
+      - "3015"
     environment:
       - VIRTUAL_HOST=jackwui.ptah.tech
-      - VIRTUAL_PORT=3000
+      - VIRTUAL_PORT=3015
       - LETSENCRYPT_HOST=jackwui.ptah.tech
       - LETSENCRYPT_EMAIL=febef.dev@gmail.com
 
