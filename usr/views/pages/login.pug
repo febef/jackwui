@@ -1,0 +1,11 @@
+
+extends ../layouts/login.pug
+
+block main
+
+  form(action="/login" method="post")
+    img(src="img/logo/gitSnak-logo-dark.png")
+    h1 jackwui  login
+    input(name="user", type="text", placeholder="user")
+    input(name="password", type="password", placeholder="password")
+    input(type="submit", value="ok")

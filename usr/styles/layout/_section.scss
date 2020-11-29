@@ -1,0 +1,22 @@
+@import "../utilities/variables";
+
+.section-code{
+  height: calc(#{$size-100} - 1rem);
+  width:$size-100;
+  position:relative;
+}
+
+body{
+  position:absolute;
+}
+
+
+@media(min-width:$large){
+
+  .section-code{
+    height:auto;
+    width:auto;
+    margin: 2rem;
+  }
+
+}

@@ -1,0 +1,23 @@
+@mixin center-element{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@mixin bg ($img, $x, $y ){
+  background:{
+    image:$img;
+    repeat:no-repeat;
+    position: $x;
+    size: $y auto;
+  }
+
+}
+
+@mixin imgCircle($height, $border){
+  // width:$width;
+  height:$height;
+  border-radius:$border;
+}

@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+console.log("Starting jackwui!...");
+
+require('../lib/app.js');

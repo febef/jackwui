@@ -1,0 +1,64 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body, form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  transform: translateY(-100px);
+  min-width: 180px;
+}
+
+form > h1 {
+  font-size: 18px;
+  margin: 8px;
+  color: #bbbbbb;
+}
+
+form > img {
+  width: 96px;
+  height: 96px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  padding: 8px;
+  background-color: gainsboro;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #ababab;
+}
+
+input[type="text"] {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+input[type="submit"] {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: whitesmoke;
+  color: #999;
+}
+
+input[type="submit"]:hover {
+  color: black;
+  transition: color .7s;
+}

@@ -1,0 +1,85 @@
+@import "../utilities/variables";
+@import "../utilities/mixin";
+
+/*navigation*/
+.navbar-main{
+  width:$size-100;
+  display:flex;
+  position:fixed;
+  bottom: 0;
+  height:2rem;
+  padding-top: $size-48 - 40;
+}
+
+.navbar-main__link{
+  //width:5rem;
+  text-align:center;
+  //height: 100%;
+  padding:0.5rem;
+  justify-content:center;
+  align-self:center;
+  align-items:center;
+}
+
+.navbar-main__link_active{
+  background-color:$bg-color;
+  border-radius:$size-48 - 28;
+}
+
+.navbar-main__list{
+  list-style:none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  width:$size-100;
+  padding:0;
+  padding-top:0;
+  margin:0;
+}
+
+.navbar__section-code{
+  background-color: $bg-color;
+  padding: 1rem;
+  height:17px;
+
+  span{
+    font-size:0.89rem;
+  }
+}
+
+.box-img-usuario{
+ // padding-top: 0.9rem ;
+ // width:16%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-self:center;
+  align-items:center;
+  margin:0;
+
+  img{
+    padding-left: 4px;
+    @include imgCircle(32px, $size-50);
+  }
+
+}
+
+
+@media(min-width:$large){
+  .navbar-main{
+    top:0;
+    padding-top:0;
+    height:2.5rem;
+  }
+
+  .navbar__section-code{
+    @include center-element;
+  }
+
+  .navbar-main__list {
+    width:100%;
+    justify-content: space-evenly;
+  }
+
+}

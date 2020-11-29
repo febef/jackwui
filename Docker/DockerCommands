@@ -1,0 +1,9 @@
+
+cd ..
+
+docker rm -f gitsnak0
+docker rmi gitsnak
+
+docker build . -t gitsnak
+
+docker run -d -it --name gitsnak0 -p 8082:80 -p 3022:22 gitsnak:latest

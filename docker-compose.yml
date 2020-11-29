@@ -1,0 +1,21 @@
+version: '3'
+services:
+  jackwui:
+    build: .
+    restart: always
+    container_name: jackwui
+    privileged: true
+    expose:
+      - "3000"
+    ports:
+      - "3014:3000"
+    environment:
+      - VIRTUAL_HOST=jackwui.ptah.tech
+      - VIRTUAL_PORT=3000
+      - LETSENCRYPT_HOST=jackwui.ptah.tech
+      - LETSENCRYPT_EMAIL=febef.dev@gmail.com
+
+networks:
+  default:
+     external:
+       name: webproxy
