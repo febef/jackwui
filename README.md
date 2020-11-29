@@ -1,2 +1,2 @@
-# gitSnak
-git web repository administrator =D
+# jackwui
+A web user interface for Jack Audio Server =D
