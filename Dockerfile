@@ -15,7 +15,6 @@ ADD . /opt/jackwui
 RUN echo "Setup Configs..." \
   && (cd /opt/jackwui && npm install) \
   && chmod +x /opt/jackwui/bin/jackwui \
-  && sed -i 's|session.*required.*pam_loginuid.so|session optional pam_loginuid.so|' /etc/pam.d/sshd \
   && echo LANG="en_US.UTF-8" > /etc/default/locale
 
 EXPOSE 3000
