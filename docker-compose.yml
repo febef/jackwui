@@ -4,7 +4,6 @@ services:
     build: .
     restart: always
     container_name: jackwui
-    privileged: true
     expose:
       - "3015"
     environment:
