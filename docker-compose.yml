@@ -12,7 +12,6 @@ services:
       - VIRTUAL_PORT=3015
       - LETSENCRYPT_HOST=jackwui.ptah.tech
       - LETSENCRYPT_EMAIL=febef.dev@gmail.com
-
 networks:
   default:
      external:
