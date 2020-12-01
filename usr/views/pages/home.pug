@@ -6,8 +6,19 @@ block main
     nav.navbar__section
       span jackwui
     if ( servers.length > 0)
+      table
+        thead
+          tr
+            td Server Name
+            td actions
       each server in servers
-         h2= server.name
+        tbody
+          tr
+            td
+              a= server.name
+            td
+              a edit
+              a delete
     else
       p Not servers configured.
 
