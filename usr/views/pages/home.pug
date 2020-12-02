@@ -11,14 +11,14 @@ block main
           tr
             td Server Name
             td actions
-      each server in servers
-        tbody
-          tr
-            td
-              a= server.name
-            td
-              a edit
-              a delete
+        each server in servers
+          tbody
+            tr
+              td
+                a= server.name
+              td
+                a edit
+                a delete
     else
       p Not servers configured.
 
