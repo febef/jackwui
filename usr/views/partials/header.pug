@@ -1,8 +1,11 @@
 nav.navbar-main
   ul.navbar-main__list
-    li.navbar-main__link.navbar-main__link_active home
-    li.navbar-main__link  ???
-    li.navbar-main__link  ???
+    li.navbar-main__link.navbar-main__link_active
+      a(src="/") dashboard
+    li.navbar-main__link
+      a(src="/nodes")  nodes
+    li.navbar-main__link
+      a(src="#")  ???
     li.box-img-usuario
       span= user.groups.includes("admin") ? "#" : "$"
       span= user.name

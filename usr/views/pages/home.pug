@@ -5,22 +5,21 @@ block main
   section.section
     nav.navbar__section
       span jackwui
-    if ( servers.length > 0)
+    if ( nodes.length > 0)
       table
         thead
           tr
-            td Server Name
+            td node Name
             td actions
-        each server in servers
+        each node in nodes
           tbody
             tr
               td
-                a= server.name
+                a(src=`/nodes/${node._id}`)= node.name
               td
                 a edit
                 a delete
     else
-      p Not servers configured.
+      p Not nodes configured.
 
-    a(href="/addServer") Add new Server!
-  pre= JSON.stringify(servers)
+    a(href="/addnode") Add new node!

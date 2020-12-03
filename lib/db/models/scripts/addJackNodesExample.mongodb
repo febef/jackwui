@@ -1,0 +1,10 @@
+
+
+
+use('jackwui');
+
+db.insertOne({
+  name: "artwo",
+  host: "ptah.tech",
+  user: "jack"
+});
