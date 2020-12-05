@@ -3,10 +3,10 @@
 
 use('jackwui');
 
-db.createCollection("JackNodes")
+db.createCollection("jacknodes")
 
-db.JackNodes.insertOne({
-  name: "artwo",
-  host: "ptah.tech",
+db.jacknodes.insertOne({
+  name: "other",
+  url: "ptah.tech",
   user: "jack"
 });

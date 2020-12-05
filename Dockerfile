@@ -6,7 +6,7 @@ RUN set -x \
   && apt-get update && apt install curl -y \
   && curl -sL https://deb.nodesource.com/setup_14.x | bash - \
  # && apt-get install --no-install-recommends --no-install-suggests -y -qq nginx openssh-server nodejs supervisor git-core \
-  && apt-get install --no-install-recommends --no-install-suggests -y -qq nodejs supervisor openssh-client \
+  && apt-get install --no-install-recommends --no-install-suggests -y -qq nodejs supervisor openssh-client sshpass \
   && apt-get clean && rm -rf /tmp/*
 
 COPY Docker/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
