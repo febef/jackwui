@@ -5,7 +5,7 @@ block main
   section.section
     nav.navbar__section
       span jackwui / add new Node
-    from(method="POST", action="/addNode")
+    form(method="POST", action="/addNode")
       fillset
         input(type="text", name="name", placeholder="name")
         input(type="text", name="url", placeholder="url")
