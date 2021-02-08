@@ -8,13 +8,10 @@ block main
       span /
       a(href="/") nodes
       span /
-      b= node.name
+      a(href=`/node/${node.name}`)= node.name
+      span /
+      b connections
 
-    nav.navbar__node
-      a(href=`node/${node.name}/connections`) connections
-      a sync
-      a edit
-
-    pre= JSON.stringify(node)
+    pre= JSON.stringify(connections)
 
 
