@@ -4,5 +4,12 @@ extends ../layouts/main.pug
 block main
   section.section
     nav.navbar__section
-      span jackwui / node / <b>${node.name}</b>
+      a(href="/") jackwui
+      span /
+      a(href="/") nodes
+      span /
+      b= node.name
+
+    pre= JSON.stringify(node)
+
 
