@@ -12,7 +12,9 @@ block main
 
     nav.navbar__node
       a(href=`node/${node.name}/connections`) connections
+      span |
       a sync
+      span |
       a edit
 
     pre= JSON.stringify(node)

@@ -1,9 +1,9 @@
 nav.navbar-main
   ul.navbar-main__list
-    li.navbar-main__link.navbar-main__link_active
-      a(src="/") dashboard
-    li.navbar-main__link
-      a(src="/nodes")  nodes
+    li.navbar-main__link(class=(dashboard?"navbar-main__link_active":""))
+      a(src="/dashboard") dashboard
+    li.navbar-main__link(class=(node || nodes ?"navbar-main__link_active":""))
+      a(src="/")  nodes
     li.navbar-main__link
       a(src="#")  ???
     li.box-img-usuario
